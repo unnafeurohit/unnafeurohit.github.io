@@ -50,7 +50,7 @@ window.PORTFOLIO_DATA = {
   about: {
     designator: "U3 — OBJECTIVE",
     heading: "Career Objective",
-    text: "Electrical and Electronic Engineering graduate with expertise in embedded systems, IoT, PCB design, wireless communication, and machine learning. Experienced in developing intelligent hardware solutions through research, industrial training, and IEEE-published projects. Seeking an entry-level Hardware, Embedded Systems, IoT, or R&D Engineering role where I can apply my technical expertise, analytical thinking, and problem-solving skills to develop innovative and reliable engineering solutions.",
+    text: "EEE graduate with hands-on expertise in embedded systems, IoT architecture, PCB design, and machine learning integration. Proven track record in developing intelligent hardware solutions backed by IEEE-published research. Seeking an entry-level Hardware, Embedded Systems, or R&D Engineering role to build reliable, high-performance technology.",
     specs: [
       { k: "Field", v: "Electrical & Electronic Engineering" },
       { k: "Focus", v: "Embedded · IoT · PCB · ML" },
@@ -164,14 +164,14 @@ window.PORTFOLIO_DATA = {
     location: "Kazipara, Dhaka",
     socials: [
       { label: "WhatsApp", url: "https://wa.me/8801600200008" },
-      { label: "LinkedIn", url: "#" },
-       { label: "GitHub", url: "#" }
+      { label: "LinkedIn", url: "https://www.linkedin.com/in/un-nafeu-rohit-b8b598248?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
+       { label: "GitHub", url: "https://github.com/unnafeurohit" }
       // ব্যবহার না করলে পুরো লাইনটা মুছে দাও
     ]
   },
 
   // ---------- ফুটার ----------
   footer: {
-    text: "designed & built for Un-Nafeu Rohit — © 2026"
+    text: "© 2026 Un-Nafeu Rohit — All Rights Reserved"
   }
 };
