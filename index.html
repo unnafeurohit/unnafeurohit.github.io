@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="traces"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand"><span class="chip"></span> <span id="brand-text"></span></div>
+    <nav class="links" id="nav-links">
+      <a href="#focus">Focus</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero" id="top">
+    <div>
+      <div id="hero-designator"></div>
+      <h1 id="hero-name"></h1>
+      <p class="role-line" id="hero-role"></p>
+      <p class="lede" id="hero-lede"></p>
+      <div class="cta-row">
+        <a class="btn btn-primary" id="hero-cv" href="#" download>↓ Download CV</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-frame">
+        <img id="hero-photo" src="" alt="">
+      </div>
+      <div class="photo-tag" id="hero-phototag"></div>
+    </div>
+  </section>
+
+  <section id="focus">
+    <div class="section-head reveal">
+      <div id="focus-designator"></div>
+      <h2 id="focus-heading"></h2>
+    </div>
+    <div class="focus-grid reveal" id="focus-grid"></div>
+  </section>
+
+  <section id="about">
+    <div class="section-head reveal">
+      <div id="about-designator"></div>
+      <h2 id="about-heading"></h2>
+    </div>
+    <div class="about-grid reveal">
+      <p id="about-text"></p>
+      <ul class="spec-list" id="about-specs"></ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-head reveal">
+      <div id="skills-designator"></div>
+      <h2 id="skills-heading"></h2>
+      <p id="skills-sub"></p>
+    </div>
+    <div class="skill-groups reveal" id="skills-groups"></div>
+  </section>
+
+  <section id="experience">
+    <div class="section-head reveal">
+      <div id="exp-designator"></div>
+      <h2 id="exp-heading"></h2>
+    </div>
+    <div class="timeline reveal" id="exp-timeline"></div>
+  </section>
+
+  <section id="projects">
+    <div class="section-head reveal">
+      <div id="proj-designator"></div>
+      <h2 id="proj-heading"></h2>
+      <p id="proj-sub"></p>
+    </div>
+    <div class="proj-grid reveal" id="proj-grid"></div>
+  </section>
+
+  <section id="publications">
+    <div class="section-head reveal">
+      <div id="pub-designator"></div>
+      <h2 id="pub-heading"></h2>
+    </div>
+    <div class="reveal" id="pub-list"></div>
+  </section>
+
+  <section id="education">
+    <div class="section-head reveal">
+      <div id="edu-designator"></div>
+      <h2 id="edu-heading"></h2>
+    </div>
+    <div class="edu-list reveal" id="edu-list"></div>
+  </section>
+
+  <section id="achievements">
+    <div class="section-head reveal">
+      <div id="ach-designator"></div>
+      <h2 id="ach-heading"></h2>
+    </div>
+    <div class="ach-list-grid reveal" id="ach-list"></div>
+    <div class="interest-pills reveal" id="interest-pills" style="margin-top:24px;"></div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-panel reveal">
+      <div>
+        <div id="contact-designator"></div>
+        <h2 id="contact-heading"></h2>
+        <p id="contact-text"></p>
+        <div class="social-row" id="social-links"></div>
+        <form class="contact-form" id="contact-form">
+          <input type="text" id="cf-name" placeholder="Your Name" required>
+          <input type="email" id="cf-email" placeholder="Your Email" required>
+          <input type="text" id="cf-subject" placeholder="Subject">
+          <textarea id="cf-message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <ul class="contact-list" id="contact-list"></ul>
+    </div>
+  </section>
+
+</main>
+
+<footer id="footer-text"></footer>
+
+<script src="content.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
