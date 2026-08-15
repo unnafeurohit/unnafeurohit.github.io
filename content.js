@@ -160,7 +160,7 @@ window.PORTFOLIO_DATA = {
     phone: "+880 1600-200008",
     phoneHref: "+8801600200008",
     website: "unnafeurohit.com",
-    websiteUrl: "https://unnafeurohit.vercel.app/",
+    websiteUrl: "unnafeurohit.com",
     location: "Kazipara, Dhaka",
     socials: [
       { label: "WhatsApp", url: "https://wa.me/8801600200008" },
