@@ -20,7 +20,7 @@ window.PORTFOLIO_DATA = {
   // ---------- ব্র্যান্ড / নেভিগেশন বার ----------
   brand: {
     shortName: "unnafeurohit",
-    suffix: ".com"
+    suffix: ""
   },
 
   // ---------- হিরো সেকশন (সবার উপরে) ----------
@@ -28,7 +28,7 @@ window.PORTFOLIO_DATA = {
     designator: "U1 — TOP LEVEL",
     name: "Un-Nafeu Rohit",
     roleLine: ["EMBEDDED SYSTEMS", "IoT", "PCB DESIGN"],
-    lede: "Electrical & Electronic Engineering graduate building intelligent hardware — from PCB schematic to deployed IoT system. IEEE-published, industrially trained, and hunting for an entry-level Hardware, Embedded Systems, IoT, or R&D Engineering role.",
+    lede: "Bridging schematic design, sensor networks, and real-time embedded logic into production-grade systems. EEE graduate with IEEE research credentials and industrial experience, ready to contribute to core R&D, product prototyping, and hardware development teams.",
     cvFile: "RHTcv.pdf",
     photoFile: "profile.jpg",
     photoTag: "DIU-EEE JU-APE"
@@ -98,16 +98,16 @@ window.PORTFOLIO_DATA = {
     heading: "Academic & Technical Projects",
     subheading: "Ten builds spanning IoT, machine learning, RF, power systems, and control.",
     items: [
-      { id: "P01", year: "Final Year", title: "ML-Based Intelligent Environmental Quality Prediction System", desc: "A solar-powered IoT system using LoRa communication and machine learning to predict and classify environmental quality in real time for remote and disaster-prone areas.", github: "#", demo: "#" },
-      { id: "P02", year: "2025", title: "Solar-Powered IoT Water Quality Monitoring System", desc: "Energy-autonomous IoT platform integrating water quality sensors, long-range LoRa communication, and ML-based real-time classification.", github: "#", demo: "#" },
-      { id: "P03", year: "2025", title: "Real-Time Fault Classifier for Three-Phase Induction Motors", desc: "ML model for real-time fault detection and classification of three-phase induction motors using electrical parameters.", github: "#", demo: "#" },
-      { id: "P04", year: "2025", title: "Performance Analysis of Photovoltaic Panel Using ML", desc: "Analyzed photovoltaic performance and efficiency trends under varying environmental conditions using supervised machine learning.", github: "#", demo: "#" },
-      { id: "P05", year: "2025", title: "Metamaterial-Based Multiband Antenna (5 / 7.5 / 10.5 GHz)", desc: "Designed and simulated a metamaterial-based multiband antenna in CST Microwave Studio with improved bandwidth and radiation characteristics.", github: "#", demo: "#" },
-      { id: "P06", year: "2025", title: "Secure PIN-Based Smart Relay Control System", desc: "ESP32-based load control with PIN authentication, local keypad + remote web dashboard, and real-time monitoring.", github: "#", demo: "#" },
-      { id: "P07", year: "2024", title: "Smart Energy Meter Using ESP32 and Blynk", desc: "Smart energy monitoring system with real-time visualization and remote access via a cloud-based dashboard.", github: "#", demo: "#" },
-      { id: "P08", year: "2024", title: "PLC-Based Temperature Control System", desc: "Industrial temperature control system designed and implemented using PLC logic and sensor feedback.", github: "#", demo: "#" },
-      { id: "P09", year: "2024", title: "Overheat Protection System for Electric Motor", desc: "Safety system that automatically disconnects motors during overheating conditions to prevent damage.", github: "#", demo: "#" },
-      { id: "P10", year: "2022", title: "Full Flat Layout Electrical Design (AutoCAD)", desc: "Complete residential electrical layout including lighting, power outlets, and protection devices.", github: "#", demo: "#" }
+      { id: "P01", year: "Final Year", title: "ML-Based Intelligent Environmental Quality Prediction System", desc: "A solar-powered IoT system using LoRa communication and machine learning to predict and classify environmental quality in real time for remote and disaster-prone areas.",},
+      { id: "P02", year: "2025", title: "Solar-Powered IoT Water Quality Monitoring System", desc: "Energy-autonomous IoT platform integrating water quality sensors, long-range LoRa communication, and ML-based real-time classification.", },
+      { id: "P03", year: "2025", title: "Real-Time Fault Classifier for Three-Phase Induction Motors", desc: "ML model for real-time fault detection and classification of three-phase induction motors using electrical parameters.",},
+      { id: "P04", year: "2025", title: "Performance Analysis of Photovoltaic Panel Using ML", desc: "Analyzed photovoltaic performance and efficiency trends under varying environmental conditions using supervised machine learning.", },
+      { id: "P05", year: "2025", title: "Metamaterial-Based Multiband Antenna (5 / 7.5 / 10.5 GHz)", desc: "Designed and simulated a metamaterial-based multiband antenna in CST Microwave Studio with improved bandwidth and radiation characteristics.", },
+      { id: "P06", year: "2025", title: "Secure PIN-Based Smart Relay Control System", desc: "ESP32-based load control with PIN authentication, local keypad + remote web dashboard, and real-time monitoring.",},
+      { id: "P07", year: "2024", title: "Smart Energy Meter Using ESP32 and Blynk", desc: "Smart energy monitoring system with real-time visualization and remote access via a cloud-based dashboard.",},
+      { id: "P08", year: "2024", title: "PLC-Based Temperature Control System", desc: "Industrial temperature control system designed and implemented using PLC logic and sensor feedback.", },
+      { id: "P09", year: "2024", title: "Overheat Protection System for Electric Motor", desc: "Safety system that automatically disconnects motors during overheating conditions to prevent damage.",},
+      { id: "P10", year: "2022", title: "Full Flat Layout Electrical Design (AutoCAD)", desc: "Complete residential electrical layout including lighting, power outlets, and protection devices.", }
       // নতুন প্রজেক্ট: { id, year, title, desc, github, demo } ফরম্যাটে কমা দিয়ে যোগ করো
     ]
   },
@@ -161,11 +161,11 @@ window.PORTFOLIO_DATA = {
     phoneHref: "+8801600200008",
     website: "unnafeurohit.com",
     websiteUrl: "unnafeurohit.com",
-    location: "Kazipara, Dhaka",
+    location: "Kazipara,Dhaka",
     socials: [
-      { label: "WhatsApp", url: "https://wa.me/8801600200008" },
-      { label: "LinkedIn", url: "https://www.linkedin.com/in/un-nafeu-rohit-b8b598248?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
-       { label: "GitHub", url: "https://github.com/unnafeurohit" }
+            { label: "LinkedIn", url: "https://www.linkedin.com/in/un-nafeu-rohit-b8b598248?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
+       { label: "GitHub", url: "https://github.com/unnafeurohit" },
+       { label: "WhatsApp", url: "https://wa.me/8801600200008" }
       // ব্যবহার না করলে পুরো লাইনটা মুছে দাও
     ]
   },
