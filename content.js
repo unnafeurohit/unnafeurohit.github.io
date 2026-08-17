@@ -1,29 +1,14 @@
-/* ============================================================
-   এই ফাইলটাতেই তোমার পোর্টফোলিওর সব লেখা/তথ্য আছে।
-   এখানে যা বদলাবে, সাইটে সাথে সাথে সেটাই দেখাবে।
-   HTML বা CSS ফাইল টাচ করার দরকার নেই — শুধু এই ফাইলে
-   "" এর ভেতরের লেখা বদলাও। কমা ( , ) মুছে ফেলো না।
 
-   *** যেসব জায়গায় তুমি নিজে বসাবে বলেছিলে, সেগুলো
-   "TODO:" কমেন্ট দিয়ে চিহ্নিত করা আছে — খুঁজে বের করে
-   বদলে নাও। ***
-
-   ছবি বদলাতে চাইলে: profile.jpg ফাইলটা মুছে তোমার নতুন
-   ছবি ওই একই নামে (profile.jpg) রেখে দাও।
-
-   CV বদলাতে চাইলে: RHTcv.pdf ফাইলটা তোমার নতুন CV দিয়ে
-   রিপ্লেস করো (নাম একই রাখতে হবে)।
-   ============================================================ */
 
 window.PORTFOLIO_DATA = {
 
-  // ---------- ব্র্যান্ড / নেভিগেশন বার ----------
+ 
   brand: {
     shortName: "Un-Nafeu Rohit",
     suffix: ""
   },
 
-  // ---------- হিরো সেকশন (সবার উপরে) ----------
+  
   hero: {
     designator: "U1 — TOP LEVEL",
     name: "Un-Nafeu Rohit",
@@ -34,7 +19,6 @@ window.PORTFOLIO_DATA = {
     photoTag: "DIU-EEE JU-APE"
   },
 
-  // ---------- ফোকাস এরিয়া কার্ড (হিরোর নিচে) ----------
   focusAreas: {
     designator: "U2 — FOCUS AREAS",
     heading: "Research & Work Focus",
@@ -46,7 +30,6 @@ window.PORTFOLIO_DATA = {
     ]
   },
 
-  // ---------- সম্পর্কে / ক্যারিয়ার অবজেক্টিভ ----------
   about: {
     designator: "U3 — OBJECTIVE",
     heading: "Career Objective",
@@ -60,8 +43,6 @@ window.PORTFOLIO_DATA = {
     ]
   },
 
-  // ---------- স্কিলস (ট্যাগ আকারে) ----------
-  // নতুন স্কিল যোগ করতে চাইলে "" এর ভেতর নাম লিখে কমা দিয়ে যোগ করো
   skills: {
     designator: "U4 — CAPABILITIES",
     heading: "Technical Skills",
@@ -76,7 +57,6 @@ window.PORTFOLIO_DATA = {
     ]
   },
 
-  // ---------- অভিজ্ঞতা ----------
   experience: {
     designator: "U5 — TIMELINE",
     heading: "Experience",
@@ -87,12 +67,9 @@ window.PORTFOLIO_DATA = {
         org: "Tools and Technology Institute (TTI), BITAC",
         desc: "Completed hands-on industrial training on Mechatronics & PLC."
       }
-      // নতুন অভিজ্ঞতা যোগ করতে চাইলে উপরের { } ব্লকের মতো কমা দিয়ে আরেকটা যোগ করো
     ]
   },
 
-  // ---------- প্রজেক্টস ----------
-  // TODO: github / demo লিংক এখন "#" বসানো আছে — তোমার আসল লিংক বসিয়ে নাও
   projects: {
     designator: "U6 — BUILDS",
     heading: "Academic & Technical Projects",
@@ -108,11 +85,9 @@ window.PORTFOLIO_DATA = {
       { id: "P08", year: "2024", title: "PLC-Based Temperature Control System", desc: "Industrial temperature control system designed and implemented using PLC logic and sensor feedback.", },
       { id: "P09", year: "2024", title: "Overheat Protection System for Electric Motor", desc: "Safety system that automatically disconnects motors during overheating conditions to prevent damage.",},
       { id: "P10", year: "2022", title: "Full Flat Layout Electrical Design (AutoCAD)", desc: "Complete residential electrical layout including lighting, power outlets, and protection devices.", }
-      // নতুন প্রজেক্ট: { id, year, title, desc, github, demo } ফরম্যাটে কমা দিয়ে যোগ করো
     ]
   },
 
-  // ---------- পাবলিকেশন ----------
   publications: {
     designator: "U7 — RESEARCH",
     heading: "Publications",
@@ -126,7 +101,6 @@ window.PORTFOLIO_DATA = {
     ]
   },
 
-  // ---------- শিক্ষাগত যোগ্যতা ----------
   education: {
     designator: "U8 — EDUCATION",
     heading: "Academic Qualification",
@@ -138,7 +112,6 @@ window.PORTFOLIO_DATA = {
     ]
   },
 
-  // ---------- অর্জন ও আগ্রহ ----------
   achievements: {
     designator: "U9 — RECORD",
     heading: "Achievements & Interests",
@@ -149,9 +122,6 @@ window.PORTFOLIO_DATA = {
     interests: ["Consumer Electronics", "AI & Machine Learning", "IoT & Robotics"]
   },
 
-  // ---------- যোগাযোগ ----------
-  // TODO: social লিংকগুলো "#" বসানো আছে — নিজের আসল প্রোফাইল লিংক বসিয়ে নাও।
-  //       যেটা নেই সেই লাইনটা মুছে দিলে ওই আইকনটা সাইটে দেখাবে না।
   contact: {
     designator: "U10 — CONTACT",
     heading: "Let's build something.",
@@ -162,18 +132,14 @@ window.PORTFOLIO_DATA = {
     website: "unnafeurohit.com",
     websiteUrl: "unnafeurohit.com",
     location: "Kazipara,Dhaka",
-    // Web3Forms দিয়ে ফরম সরাসরি ইমেইলে পাঠানোর জন্য এই key ব্যবহার হয়।
-    // key বদলাতে চাইলে https://web3forms.com থেকে নতুন key নিয়ে এখানে বসাও।
     web3formsKey: "52f621ba-e533-4da6-a668-ae06bf751644",
     socials: [
             { label: "LinkedIn", url: "https://www.linkedin.com/in/un-nafeu-rohit-b8b598248?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
        { label: "GitHub", url: "https://github.com/unnafeurohit" },
        { label: "WhatsApp", url: "https://wa.me/8801600200008" }
-      // ব্যবহার না করলে পুরো লাইনটা মুছে দাও
     ]
   },
 
-  // ---------- ফুটার ----------
   footer: {
     text: "© 2026 Un-Nafeu Rohit — All Rights Reserved"
   }

@@ -185,7 +185,7 @@
   .spec-list li span:last-child{ color:var(--silk); text-align:right; }
 
   /* Skills */
-  .skill-groups{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; align-items:start; }
+  .skill-groups{ display:grid; grid-template-columns:repeat(2,1fr); gap:16px; align-items:start; }
   .skill-group{ padding:24px 22px; border:1px solid var(--trace); }
   .skill-group h3{
     font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--copper);
