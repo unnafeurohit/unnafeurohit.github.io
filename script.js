@@ -110,7 +110,7 @@ D.publications.items.forEach(p => {
   const box = el('div', { class: 'pub' });
   box.append(el('span', { class: 'pub-tag', text: p.tag }));
   box.append(el('p', { class: 'cite', html: p.citationHtml }));
-  box.append(el('a', { class: 'doi', html: p.doiText + ' ↗', attrs: { href: p.doiUrl, target: '_blank', rel: 'noopener' } }));
+  box.append(el('a', { class: 'doi', html: p.doiText + '&nbsp;↗', attrs: { href: p.doiUrl, target: '_blank', rel: 'noopener' } }));
   pubWrap.append(box);
 });
 
@@ -158,17 +158,52 @@ if (D.contact.socials && D.contact.socials.length) {
   });
 }
 
-// ---------- Contact form (mailto fallback — no backend) ----------
+// ---------- Contact form (Web3Forms — sends straight to inbox, no mail app) ----------
 const form = document.getElementById('contact-form');
+const statusEl = document.getElementById('cf-status');
 if (form) {
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const name = document.getElementById('cf-name').value;
-    const email = document.getElementById('cf-email').value;
-    const subject = document.getElementById('cf-subject').value || 'Portfolio contact';
-    const message = document.getElementById('cf-message').value;
-    const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-    window.location.href = `mailto:${D.contact.email}?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+    // honeypot spam check — real users never fill this hidden field
+    if (form.botcheck && form.botcheck.value) return;
+
+    const submitBtn = document.getElementById('cf-submit');
+    const originalLabel = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    if (statusEl) { statusEl.textContent = ''; statusEl.className = 'form-status'; }
+
+    const payload = {
+      access_key: D.contact.web3formsKey,
+      name: document.getElementById('cf-name').value,
+      email: document.getElementById('cf-email').value,
+      subject: document.getElementById('cf-subject').value || 'New message from portfolio site',
+      message: document.getElementById('cf-message').value
+    };
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      const data = await res.json();
+
+      if (data.success) {
+        form.reset();
+        submitBtn.textContent = 'Message sent ✓';
+        if (statusEl) { statusEl.textContent = 'Thanks — your message has been sent.'; statusEl.className = 'form-status success'; }
+      } else {
+        throw new Error(data.message || 'Submission failed');
+      }
+    } catch (err) {
+      submitBtn.textContent = 'Send Message';
+      if (statusEl) { statusEl.textContent = "Something went wrong — please email me directly instead."; statusEl.className = 'form-status error'; }
+    } finally {
+      submitBtn.disabled = false;
+      setTimeout(() => { submitBtn.textContent = originalLabel; }, 4000);
+    }
   });
 }
 

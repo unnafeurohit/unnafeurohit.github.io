@@ -126,11 +126,13 @@
         <p id="contact-text"></p>
         <div class="social-row" id="social-links"></div>
         <form class="contact-form" id="contact-form">
-          <input type="text" id="cf-name" placeholder="Your Name" required>
-          <input type="email" id="cf-email" placeholder="Your Email" required>
-          <input type="text" id="cf-subject" placeholder="Subject">
-          <textarea id="cf-message" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
+          <input type="text" id="cf-name" name="name" placeholder="Your Name" required>
+          <input type="email" id="cf-email" name="email" placeholder="Your Email" required>
+          <input type="text" id="cf-subject" name="subject" placeholder="Subject">
+          <textarea id="cf-message" name="message" placeholder="Your Message" required></textarea>
+          <input type="text" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+          <button type="submit" id="cf-submit">Send Message</button>
+          <p class="form-status" id="cf-status" role="status" aria-live="polite"></p>
         </form>
       </div>
       <ul class="contact-list" id="contact-list"></ul>

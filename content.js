@@ -19,7 +19,7 @@ window.PORTFOLIO_DATA = {
 
   // ---------- ব্র্যান্ড / নেভিগেশন বার ----------
   brand: {
-    shortName: "unnafeurohit",
+    shortName: "Un-Nafeu Rohit",
     suffix: ""
   },
 
@@ -146,7 +146,7 @@ window.PORTFOLIO_DATA = {
       { year: "2014", text: "1st Position, National Science Olympiad (Division Level)" },
       { year: "2017", text: "2nd Position, Salim Al Deen National Art Competition" }
     ],
-    interests: ["Consumer Electronics", "AI & Machine Learning", "IoT & Robotics", "Esports"]
+    interests: ["Consumer Electronics", "AI & Machine Learning", "IoT & Robotics"]
   },
 
   // ---------- যোগাযোগ ----------
@@ -162,6 +162,9 @@ window.PORTFOLIO_DATA = {
     website: "unnafeurohit.com",
     websiteUrl: "unnafeurohit.com",
     location: "Kazipara,Dhaka",
+    // Web3Forms দিয়ে ফরম সরাসরি ইমেইলে পাঠানোর জন্য এই key ব্যবহার হয়।
+    // key বদলাতে চাইলে https://web3forms.com থেকে নতুন key নিয়ে এখানে বসাও।
+    web3formsKey: "52f621ba-e533-4da6-a668-ae06bf751644",
     socials: [
             { label: "LinkedIn", url: "https://www.linkedin.com/in/un-nafeu-rohit-b8b598248?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
        { label: "GitHub", url: "https://github.com/unnafeurohit" },
